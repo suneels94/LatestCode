@@ -1,0 +1,63 @@
+<div class="formsubmit_css_maindiv">
+    <form [formGroup]="registrationGroup" (ngSubmit)="onSubmit()">
+        <div class="userDetails_css">
+            <div class="frstname_css">
+                <label for="first-name" class="label_css">First Name: </label>
+                <input id="first-name" class="form-control" type="text" formControlName="firstname"
+                [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }">
+                <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                    <div *ngIf="f.firstname.errors['required']">First Name is required</div>
+                </div>   
+            </div>
+            <div class="lastname_css">
+                <label for="last-name" class="label_css">Last Name: </label>
+                <input id="last-name" type="text" class="form-control" formControlName="lastname"
+                [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }">
+                <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastname.errors['required']">Last Name is required</div>
+                </div> 
+            </div>               
+            <div class="phonenumber_css">
+                <label for="mobile-number" class="label_css">Mobile Number: </label>
+                <input type="number" class="form-control" id="mobile-number" formControlName="phone"
+                [ngClass]="{ 'is-invalid':submitted && f.phone.errors }">
+                <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                    <div *ngIf="f.phone.errors['required']">Mobile Number is required</div>
+                </div> 
+            </div>
+            <div class="email_css">
+                <label for="email-id" class="label_css">Mail Id: </label>
+                <input type="email" id="email-id" class="form-control" formControlName="email"
+                [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors['required']">Email is required</div>
+                </div> 
+            </div>
+            <div class="username_css">
+                <label for="user-name" class="label_css">User Name: </label>
+                <input type="text" class="form-control" id="user-name" formControlName="username"
+                [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors['required']">User Name is required</div>
+                </div> 
+            </div>
+            <div class="password_css">
+                <label for="password" class="label_css">Password: </label>
+                <input type="password" class="form-control" id="password" formControlName="password"
+                [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors['required']">Password is required</div>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="signup_btn_css">
+            <button class="btn btn-primary" type="submit">SignUp</button>
+            <span class="contue_login"><a routerLink="/login">Continue to Login</a></span>
+        </div>
+        
+    </form>
+</div>
+<!-- <span>{{outputValue | json}}</span> -->
+
+

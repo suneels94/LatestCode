@@ -1,0 +1,24 @@
+<div class="formsubmit_css_maindiv">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="userDetails_css">
+            <div class="username_css">
+                <label for="user-name" class="label_css">User Name: </label>
+                <input type="text" class="form-control" id="user-name" formControlName="username">
+            </div>
+            <div class="password_css">
+                <label for="password" class="label_css">Password: </label>
+                <input type="password" class="form-control" id="password" formControlName="password">
+            </div>
+        </div>
+        
+        <div class="signup_btn_css">
+            <button class="btn btn-primary" type="submit">Login</button>
+            <span class="contue_login"><a routerLink="/register">SignUp</a></span>
+        </div>
+        
+    </form>
+</div>
+<app-home [childMessage]="parentMessage" class="disable"></app-home>
+<!-- <span>{{outputValue | json}}</span> -->
+
+
