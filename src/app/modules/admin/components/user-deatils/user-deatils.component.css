@@ -1,0 +1,34 @@
+.formsubmit_css_maindiv{
+    margin: auto;
+    /* width: 50%; */
+    border: 2px solid grey;
+    padding: 0px 50px;
+    border-radius: 10px;
+}
+.signup_btn_css{
+    margin: 20px 0;
+}
+.lastname_css,.frstname_css,.phonenumber_css,.email_css,.username_css,.password_css{
+    /* display: flex; */
+}
+input[type=text],input[type=number],input[type=password],input[type=email]{
+    /* margin-left: 65px; */
+}
+label{
+    padding-top: 30px;
+}
+.contue_login{
+    float: right;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+.clickable_css{
+    cursor: pointer;
+    color: #0d6efd;
+}
+.table_main_css{
+    overflow-y: auto;
+    height: 250px;
+}

@@ -1,0 +1,16 @@
+.span_css{
+    font-size: 24px;
+    font-family: cursive;
+    color: darkorchid;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.sub_css{
+    text-align: center;
+}
+p{
+    background-color: green;
+}
+.suneel_new_css{
+    padding: 20px;
+}
